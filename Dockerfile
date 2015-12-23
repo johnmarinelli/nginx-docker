@@ -6,8 +6,6 @@ RUN apt-get update
 # install nodejs and npm
 RUN apt-get install -y nodejs npm git git-core
 
-  
-
 # Remove the default Nginx configuration file
 RUN rm -v /etc/nginx/nginx.conf
 
@@ -22,4 +20,11 @@ EXPOSE 80
 
 # Set the default command to execute
 # when creating a new container
-CMD service nginx start
+#CMD service nginx start
+
+# pull from git repo
+ADD start.sh /tmp/
+
+RUN chmod +x /tmp/start.sh
+
+CMD ./tmp/start.sh
