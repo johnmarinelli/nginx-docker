@@ -1,0 +1,14 @@
+{
+  "name": "nginx-load-balancer",
+  "version": "1.0.0",
+  "description": "nginx load balanced node webserver to run inside a docker image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "john marinelli",
+  "license": "MIT"
+  "dependencies": {
+    "express": "*"
+  }
+}

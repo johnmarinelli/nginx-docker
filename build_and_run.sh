@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+docker build -t hello-nginx-load-balancer .
+echo "listening on localhost:90"
+docker run -it -p 90:80 hello-nginx-load-balancer
