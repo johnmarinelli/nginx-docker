@@ -16,7 +16,7 @@ ADD nginx.conf /etc/nginx/
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 # Expose ports
-EXPOSE 8080
+EXPOSE 80
 
 # pull from git repo
 ADD start.sh /tmp/

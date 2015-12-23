@@ -7,7 +7,4 @@ cd nginx-node-docker-load-balancer
 npm install
 nodejs .
 
-whereis nodejs
-nodejs -v
-
 service nginx start
